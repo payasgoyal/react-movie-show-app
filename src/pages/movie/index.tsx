@@ -1,5 +1,5 @@
 import React, { useState, SetStateAction, useContext } from "react";
-import Layout from "../../Layout";
+import Layout from "../../layout";
 import {
   Box,
   Paper,
