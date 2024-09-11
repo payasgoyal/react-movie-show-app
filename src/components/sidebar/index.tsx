@@ -1,4 +1,4 @@
-import { Hidden, Icon, Typography } from "@mui/material";
+import { Typography } from "@mui/material";
 import React from "react";
 import HomeIcon from "@mui/icons-material/Home";
 import LiveTvIcon from "@mui/icons-material/LiveTv";

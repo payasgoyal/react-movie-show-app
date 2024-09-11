@@ -20,7 +20,7 @@ const MovieTrendCard = ({ movie }: MovieTrendCardProps) => {
   return (
     <Card
       variant="outlined"
-      sx={{ bgcolor: "transparent", color: "#E0E0E0", my: 3, border: "none" }} 
+      sx={{ bgcolor: "transparent", color: "#E0E0E0", my: 3, border: "none" }}
     >
       <CardContent sx={{ p: 0, position: "relative" }}>
         <Grid container spacing={1}>
@@ -28,7 +28,7 @@ const MovieTrendCard = ({ movie }: MovieTrendCardProps) => {
             <img
               src={movie.thumbnail.regular.large}
               alt=""
-              style={{ width: "400px", height: "180px", borderRadius: "8px" }}
+              style={{ width: "400px", height: "180px", borderRadius: "8px", filter: "blur(2px)" }}
             />
           </Grid>
           <Stack
@@ -61,9 +61,9 @@ const MovieTrendCard = ({ movie }: MovieTrendCardProps) => {
                 />
               </Grid>
               <Grid item>
-              <div>
+                <div>
                   {movie.category === "Movies" ? <MovieIcon /> : <LiveTvIcon />}
-                  </div>
+                </div>
               </Grid>
               <Grid item>
                 <Typography
@@ -98,7 +98,12 @@ const MovieTrendCard = ({ movie }: MovieTrendCardProps) => {
               {movie.title}
             </Typography>
           </Stack>
-          <Grid item xs={2} sx={{ position: "absolute", top: 0, right: 0 }}>
+          <Grid
+            item
+            xs={2}
+            sx={{ position: "absolute", top: 0, right: 0 }}
+            
+          >
             <Box
               sx={{
                 display: "flex",

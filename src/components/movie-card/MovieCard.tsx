@@ -94,7 +94,7 @@ const MovieCard = ({movie}: MovieCardProps) => {
                 {movie.title}
               </Typography>
             </Grid>
-            <Grid item xs={2} sx={{ position: "absolute", top: 0, right: 0 }}>
+            <Grid item xs={2} sx={{ position: "absolute", top: 0, right: 0 }} >
               <Box
                 sx={{
                   display: "flex",
